@@ -1,0 +1,48 @@
+@use "../../style/global" as *;
+@use "../../style/mixins" as *;
+@use "../../style/variables" as *;
+
+.burger-container {
+    --bar-width: 60px;
+    --bar-height: 8px;
+    --burger-gap: 6px;
+    --burger-margin: 1rem;
+    --animation-timing: 200ms ease-in-out;
+}
+
+.burger-menu {
+    display: flex;
+    flex-direction: column;
+    gap: var(--burger-gap);
+    width: max-content;
+    position: absolute;
+    top: var(--burger-margin);
+    left: var(--burger-margin);
+    z-index: 2;
+    cursor: pointer;
+}
+
+.burger-menu::before,
+.burger-menu::after,
+.burger-menu input {
+    content: "";
+    width: var(--bar-width);
+    height: var(--bar-height);
+    background-color: $primary;
+    border-radius: 9999px;
+    transition: opacity var(--animation-timing), width var(--animation-timing);
+    transform-origin: left center;
+}
+
+.burger-menu input {
+    appearance: none;
+    padding: 0;
+    margin: 0;
+    outline: none;
+    pointer-events: none;
+}
+
+.burger-menu input:checked {
+    opacity: 0;
+    width: 0;
+}
