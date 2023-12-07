@@ -53,7 +53,7 @@
     &__bar {
         height: 3px;
         width: 100%;
-        background-color: $primary;
+        background-color: $white;
     }
 }
 
@@ -65,7 +65,7 @@
     &__link {
         padding: 0.25rem 1rem;
         margin-bottom: 1rem;
-        color: $primary;
+        color: $white;
         transition: color 0.2s;
         background: linear-gradient(to right, #344030, #98a194),
             linear-gradient(to right, #344030, #d4ddd2, #aabba4);

@@ -1,0 +1,39 @@
+@use "../../style/global" as *;
+@use "../../style/mixins" as *;
+@use "../../style/variables" as *;
+
+.hero-container {
+    display: flex;
+    flex-direction: column;
+}
+
+video {
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.hero-text {
+    width: 75%;
+
+    &__header {
+        @include mobileH1;
+        color: $white;
+        margin: 1rem;
+    }
+
+    &__subhead {
+        @include mobileH2;
+        color: $white;
+        margin: 1rem;
+    }
+
+    &__body {
+        @include mobileP1;
+        color: $white;
+        margin-left: 1rem;
+    }
+}

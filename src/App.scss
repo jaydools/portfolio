@@ -1,0 +1,13 @@
+@use "./style/global" as *;
+@use "./style/mixins" as *;
+@use "./style/typography" as *;
+@use "./style/variables" as *;
+
+.App {
+    background-image: url("./assets/herobackground.png");
+    background-position: center;
+    background-size: cover;
+    height: 1030px;
+    position: absolute;
+    width: 100%;
+}

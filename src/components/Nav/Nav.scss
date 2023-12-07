@@ -57,11 +57,11 @@
         display: inline-block;
         text-decoration: none;
         text-wrap: nowrap;
-        color: $primary;
+        color: $white;
         position: relative;
 
         &:hover {
-            color: $secondary;
+            color: $hover;
             cursor: pointer;
         }
         &::before {
