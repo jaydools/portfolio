@@ -3,46 +3,79 @@
 @use "../../style/variables" as *;
 
 .burger-container {
-    --bar-width: 60px;
-    --bar-height: 8px;
-    --burger-gap: 6px;
-    --burger-margin: 1rem;
-    --animation-timing: 200ms ease-in-out;
+    -webkit-animation: slide-in-top 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+    animation: slide-in-top 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+    text-align: right;
+
+    @include tablet {
+        display: none;
+    }
+}
+
+@keyframes slide-in-top {
+    0% {
+        -webkit-transform: translateY(-1000px);
+        transform: translateY(-1000px);
+        opacity: 0;
+    }
+    100% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.burger-left {
+    display: flex;
+
+    &__logo {
+        margin: 1rem;
+        height: 75px;
+    }
 }
 
 .burger-menu {
+    cursor: pointer;
+    height: 30px;
+    width: 30px;
     display: flex;
     flex-direction: column;
-    gap: var(--burger-gap);
-    width: max-content;
-    position: absolute;
-    top: var(--burger-margin);
-    left: var(--burger-margin);
-    z-index: 2;
+    justify-content: space-around;
+    margin: 2rem;
+    position: fixed;
+    top: 0;
+    right: 0;
+
+    @include tablet {
+        display: none;
+    }
+
+    &__bar {
+        height: 3px;
+        width: 100%;
+        background-color: $primary;
+    }
+}
+
+.burger-nav {
     cursor: pointer;
-}
 
-.burger-menu::before,
-.burger-menu::after,
-.burger-menu input {
-    content: "";
-    width: var(--bar-width);
-    height: var(--bar-height);
-    background-color: $primary;
-    border-radius: 9999px;
-    transition: opacity var(--animation-timing), width var(--animation-timing);
-    transform-origin: left center;
-}
+    animation: slide-in-top 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
 
-.burger-menu input {
-    appearance: none;
-    padding: 0;
-    margin: 0;
-    outline: none;
-    pointer-events: none;
-}
+    &__link {
+        padding: 0.25rem 1rem;
+        margin-bottom: 1rem;
+        color: $primary;
+        transition: color 0.2s;
+        background: linear-gradient(to right, #344030, #98a194),
+            linear-gradient(to right, #344030, #d4ddd2, #aabba4);
+        background-size: 100% 1.5px, 0 1.5px;
+        background-position: 100% 100%, 0 100%;
+        background-repeat: no-repeat;
+        transition: background-size 400ms;
 
-.burger-menu input:checked {
-    opacity: 0;
-    width: 0;
+        &:hover {
+            background-size: 0 1.5px, 100% 1.5px;
+        }
+    }
 }

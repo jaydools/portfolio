@@ -1,18 +1,32 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Burger.scss";
+import logo from "../../assets/icons/logo.png";
+
 function Burger() {
+    const [isOpen, setIsOpen] = useState(false);
+
+    const toggleMenu = () => {
+        setIsOpen(!isOpen);
+    };
+
     return (
         <div className="burger-container">
-            <label className="burger-menu">
-                <input type="checkbox" />
-            </label>
-            <aside className="sidebar">
-                <nav>
-                    <div>About</div>
-                    <div>Projects</div>
-                    <div>Contact</div>
-                </nav>
-            </aside>
+            <div className="burger-left">
+                <img src={logo} alt="Dooley logo" className="burger-left__logo" />
+            </div>
+            <nav className="burger-menu" onClick={toggleMenu}>
+                <div className="burger-menu__bar"></div>
+                <div className="burger-menu__bar"></div>
+                <div className="burger-menu__bar"></div>
+            </nav>
+
+            {isOpen && (
+                <div className="burger-nav">
+                    <div className="burger-nav__link">About</div>
+                    <div className="burger-nav__link">Projects</div>
+                    <div className="burger-nav__link">Contact</div>
+                </div>
+            )}
         </div>
     );
 }
