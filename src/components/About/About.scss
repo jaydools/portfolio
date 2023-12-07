@@ -1,0 +1,17 @@
+@use "../../style/global" as *;
+@use "../../style/mixins" as *;
+@use "../../style/variables" as *;
+
+.about-card {
+    border-radius: $cardRadius;
+    background: linear-gradient(
+        90deg,
+        rgba(246, 246, 246, 1) 0%,
+        rgba(255, 255, 255, 1) 35%,
+        rgba(223, 223, 223, 1) 100%
+    );
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin: 12rem 1rem 2rem 1rem;
+    padding: 2rem;
+    transition: transform 0.3s ease;
+}
