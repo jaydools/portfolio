@@ -23,15 +23,14 @@
     line-height: 1.25rem;
     font-weight: 600;
 }
-/////////////////////////////// USED ///////////////////////////////
-/// for tablet middle menu
+
 @mixin mobileH3 {
-    font-size: 0.75rem;
+    font-size: 1.25rem;
     line-height: 1.125rem;
     font-weight: 400;
+    letter-spacing: 0.1rem;
 }
-/////////////////////////////// USED ///////////////////////////////
-/// for tablet cart & login
+
 @mixin mobileH4 {
     font-size: 1rem;
     line-height: 1rem;
@@ -51,14 +50,12 @@
 }
 
 @mixin mobileHamburg {
-    /////////////////////////////// USED ///////////////////////////////
-    /// for mobile hamburg menu
     font-size: 1rem;
     line-height: 1.5rem;
     font-weight: 400;
     letter-spacing: 0.25rem;
 }
-/////////////////////////////////////////////
+
 @mixin desktopH1 {
     font-size: 2rem;
     line-height: 2.5rem;
@@ -70,15 +67,13 @@
     line-height: 2rem;
     font-weight: 600;
 }
-/////////////////////////////// USED ///////////////////////////////
-/// for tablet middle menu
+
 @mixin desktopH3 {
     font-size: 1rem;
     line-height: 1.125rem;
     font-weight: 400;
 }
-/////////////////////////////// USED ///////////////////////////////
-/// for desktop cart & login
+
 @mixin desktopH4 {
     font-size: 1.5rem;
     line-height: 1.125rem;

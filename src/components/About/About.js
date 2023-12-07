@@ -1,13 +1,16 @@
 import React from "react";
 import "./About.scss";
+import frontend from "../../assets/icons/frontend.png";
+import backend from "../../assets/icons/backend.png";
+import ux from "../../assets/icons/ux.png";
 
 function About() {
     return (
         <div className="about-container">
             <div className="about-card">
-                <h2>About</h2>
-                <h4>Here's a litle about about me</h4>
-                <p>
+                <h2 className="about-card__header">Background</h2>
+                <h4 className="about-card__subhead">Here's a litle about about me</h4>
+                <p className="about-card__body">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec tempus eget augue
                     ut fringilla. Aenean in placerat sem, et interdum ligula. Nulla venenatis quis
                     nulla quis lacinia. Pellentesque habitant morbi tristique senectus et netus et
@@ -26,6 +29,21 @@ function About() {
                     vel ex semper egestas. Phasellus hendrerit metus nec gravida venenatis. Nulla
                     euismod nisi a leo eleifend, nec dapibus risus ultrices.
                 </p>
+            </div>
+
+            <div className="abilities">
+                <div className="abilities__frontend">
+                    <p className="abilities__text">Frontend</p>
+                    <img src={frontend} alt="frontend icon" className="abilities__icon" />
+                </div>
+                <div className="abilities__backend">
+                    <p className="abilities__text">Backend</p>
+                    <img src={backend} alt="frontend icon" className="abilities__icon" />
+                </div>
+                <div className="abilities__ux">
+                    <p className="abilities__text">Ux Design</p>
+                    <img src={ux} alt="frontend icon" className="abilities__icon" />
+                </div>
             </div>
         </div>
     );
