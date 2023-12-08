@@ -1,6 +1,5 @@
 import React from "react";
 import "./Hero.scss";
-import me from "../../assets/jordanDooley.png";
 
 function Hero() {
     return (

@@ -22,7 +22,9 @@ function Burger() {
 
             {isOpen && (
                 <div className="burger-nav">
-                    <div className="burger-nav__link">About</div>
+                    <div className="burger-nav__link">
+                        <a href=".about-card__header">About</a>
+                    </div>
                     <div className="burger-nav__link">Projects</div>
                     <div className="burger-nav__link">Contact</div>
                 </div>
