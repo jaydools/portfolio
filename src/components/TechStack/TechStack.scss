@@ -1,3 +1,42 @@
 @use "../../style/global" as *;
 @use "../../style/mixins" as *;
 @use "../../style/variables" as *;
+
+.tec-container {
+    margin: 2rem 0;
+    border: 1px solid black;
+    background: linear-gradient(90deg, rgba(28, 41, 44, 1) 0%, rgba(56, 71, 74, 1) 100%);
+
+    &__header {
+        margin: 2rem;
+        color: $white;
+        @include mobileH3;
+    }
+
+    &__subhead {
+        margin: 2rem;
+        color: $white;
+        @include mobileH1;
+    }
+}
+
+.tec-card {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    overflow: hidden;
+    justify-content: center;
+
+    &__icon {
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        width: 30%;
+        max-width: 170px;
+        padding: 1rem;
+        margin: 1rem;
+        border-radius: $cardRadius;
+
+        &:hover {
+            box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.2), 0 6px 20px 0 rgba(226, 226, 226, 0.19);
+        }
+    }
+}
