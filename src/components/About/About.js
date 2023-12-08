@@ -1,36 +1,72 @@
-import React from "react";
+import React, { useState } from "react";
 import "./About.scss";
 import frontend from "../../assets/icons/frontend.png";
 import backend from "../../assets/icons/backend.png";
 import ux from "../../assets/icons/ux.png";
 
 function About() {
+    const [isExpanded, setIsExpanded] = useState(false);
+
+    const toggleExpand = () => {
+        setIsExpanded(!isExpanded);
+    };
+
     return (
         <div className="about-container">
             <div className="about-card">
                 <h2 className="about-card__header">Background</h2>
-                <h4 className="about-card__subhead">Here's a litle about about me</h4>
-                <p className="about-card__body">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec tempus eget augue
-                    ut fringilla. Aenean in placerat sem, et interdum ligula. Nulla venenatis quis
-                    nulla quis lacinia. Pellentesque habitant morbi tristique senectus et netus et
-                    malesuada fames ac turpis egestas. Fusce eget odio pharetra, congue eros at,
-                    pretium tortor. In sodales purus id euismod dignissim. Mauris eget nisi ut ipsum
-                    facilisis maximus a sed turpis. Nulla imperdiet in sapien eu sodales. Aenean
-                    mollis elit vel ante dignissim porta. Morbi mauris leo, placerat eget massa eu,
-                    maximus tristique nulla. Mauris arcu tellus, rhoncus vehicula congue non,
-                    bibendum ac sem.
-                </p>
+                <h4 className="about-card__subhead">Park Ranger turned Software Engineer</h4>
 
-                <p>
-                    Aenean vitae neque sed tellus consectetur molestie. Morbi dignissim lorem vel
-                    ipsum consectetur, ac vehicula enim euismod. Integer ut pulvinar eros, ac
-                    pharetra tellus. In cursus tortor sit amet dapibus posuere. Curabitur et dolor
-                    vel ex semper egestas. Phasellus hendrerit metus nec gravida venenatis. Nulla
-                    euismod nisi a leo eleifend, nec dapibus risus ultrices.
-                </p>
+                {isExpanded ? (
+                    <div>
+                        <p className="about-card__body">
+                            Jordan moved from Ontario to British Columbia in 2015 to attend a post
+                            secondary program from College of the Rockies, where he had ambitions of
+                            becoming a backcountry tour guide. Shortly after completeing this
+                            program, he moved to Jasper, Alberta where he worked as a boat tour
+                            guide and captain doing interpretive tours on Maligne Lake, and his
+                            career in tourism really accelerated.
+                        </p>
+                        <p className="about-card__body">
+                            After being a tour guide throughout the Canadian Rockies, Jordan moved
+                            to Sechelt, BC in 2018, where he bagan working as a Park Ranger with BC
+                            Parks. For 5 years, he maintained the infrastucture and ecological
+                            values of the backcountry of the Lower Sunshine Coast, as well as in the
+                            Sea to Sky, where he worked as a Ranger based out of Squamish/Pemberton.
+                        </p>
+
+                        <p className="about-card__body">
+                            At the height of the pandemic, Jordan started<span> </span>
+                            <a href="https://www.vearthy.com" target="_blank" className="vearthy">
+                                Vearthy.com
+                            </a>
+                            <span> </span>- an Ecommerece business that creates high quality and
+                            sustainibly made everyday essentials. This is where he combined his
+                            passion for graphic design with his ever growing love for web
+                            development.
+                        </p>
+                        <p className="about-card__body">
+                            As someone with strong coding skills, an eye for design, excellent
+                            communication skills and an understanding of small business, you could
+                            consider Jordan a valuable team member.
+                        </p>
+                        <button className="card-button" onClick={toggleExpand}>
+                            Show Less
+                        </button>
+                    </div>
+                ) : (
+                    <div>
+                        <p className="about-card__body--closed">
+                            Jordan moved from Ontario to British Columbia in 2015 to attend a post
+                            secondary program from College of the Rockies, where he had ambitions of
+                            becoming a backcountry tour guide...
+                        </p>
+                        <button className="card-button" onClick={toggleExpand}>
+                            Show More
+                        </button>
+                    </div>
+                )}
             </div>
-
             <div className="abilities">
                 <div className="abilities__frontend">
                     <p className="abilities__text">Frontend</p>

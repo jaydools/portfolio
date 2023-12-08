@@ -2,6 +2,11 @@
 @use "../../style/mixins" as *;
 @use "../../style/variables" as *;
 
+.about-container {
+    display: flex;
+    flex-direction: column;
+}
+
 .about-card {
     border-radius: $cardRadius;
     background: linear-gradient(
@@ -22,6 +27,13 @@
     &__subhead {
         @include mobileH3;
         padding-bottom: 0.5rem;
+    }
+
+    &__body {
+        @include mobileP1;
+
+        &--closed {
+        }
     }
 }
 
@@ -69,4 +81,19 @@
             height: 90%;
         }
     }
+}
+
+.vearthy {
+    font-weight: bold;
+    text-decoration: underline;
+    color: $primary;
+
+    &:hover {
+        color: $secondary;
+    }
+}
+
+.card-button {
+    padding-top: 0.5rem;
+    font-weight: bold;
 }
