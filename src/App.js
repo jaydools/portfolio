@@ -3,6 +3,7 @@ import About from "./components/About/About";
 import Hero from "./components/Hero/Hero";
 import Nav from "./components/Nav/Nav";
 import Burger from "./components/NavHamburg/Burger";
+import Projects from "./components/Projects/Projects";
 import TechStack from "./components/TechStack/TechStack";
 
 function App() {
@@ -13,6 +14,7 @@ function App() {
             <Hero />
             <About />
             <TechStack />
+            <Projects />
         </div>
     );
 }
