@@ -45,10 +45,10 @@ export default function Footer() {
                                 About
                             </a>
                             <a href="" className="footer-right__content-left">
-                                Blog
+                                Projects
                             </a>
                             <a href="" className="footer-right__content-left">
-                                Contact Us
+                                Contact
                             </a>
                         </div>
                         <div className="footer__right-linksright">
