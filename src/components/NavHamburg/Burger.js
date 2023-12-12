@@ -23,10 +23,14 @@ function Burger() {
             {isOpen && (
                 <div className="burger-nav">
                     <div className="burger-nav__link">
-                        <a href=".about-card__header">About</a>
+                        <a href="#about">About</a>
                     </div>
-                    <div className="burger-nav__link">Projects</div>
-                    <div className="burger-nav__link">Contact</div>
+                    <div className="burger-nav__link">
+                        <a href="#projects">Projects</a>
+                    </div>
+                    <div className="burger-nav__link">
+                        <a href="#contact">Contact</a>
+                    </div>
                 </div>
             )}
         </div>

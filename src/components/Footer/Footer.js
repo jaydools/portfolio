@@ -1,7 +1,5 @@
 import "./Footer.scss";
-// import twitter from "../../Assets/Images/twitter.svg";
-// import facebook from "../../Assets/Images/facebook.svg";
-// import instagram from "../../Assets/Images/instagram.svg";
+import { Link } from "react-router-dom";
 
 export default function Footer() {
     return (
@@ -38,16 +36,13 @@ export default function Footer() {
                 <div className="footer-right__contact">
                     <div className="footer-right__links">
                         <div className="footer-right__linksleft">
-                            <a href="" className="footer-right__content-left">
-                                Home
-                            </a>
-                            <a href="" className="footer-right__content-left">
+                            <a href="#about" className="footer-right__content-left">
                                 About
                             </a>
-                            <a href="" className="footer-right__content-left">
+                            <a href="#projects" className="footer-right__content-left">
                                 Projects
                             </a>
-                            <a href="" className="footer-right__content-left">
+                            <a href="#contact" className="footer-right__content-left">
                                 Contact
                             </a>
                         </div>

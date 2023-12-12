@@ -38,7 +38,7 @@ function About() {
     }, []);
 
     return (
-        <div className="about-container">
+        <div className="about-container" id="about">
             <div className="about-card">
                 <h2 className="about-card__header">Background</h2>
                 <h4 className="about-card__subhead">Park Ranger turned Software Engineer</h4>
@@ -63,7 +63,12 @@ function About() {
 
                         <p className="about-card__body">
                             At the height of the pandemic, Jordan started<span> </span>
-                            <a href="https://www.vearthy.com" target="_blank" className="vearthy">
+                            <a
+                                href="https://www.vearthy.com"
+                                target="_blank"
+                                className="vearthy"
+                                rel="noopener noreferrer"
+                            >
                                 Vearthy.com
                             </a>
                             <span> </span>- an Ecommerece business that creates high quality and

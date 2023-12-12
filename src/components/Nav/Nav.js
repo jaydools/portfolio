@@ -11,9 +11,15 @@ function Header() {
                 </div>
                 <div className="rightside">
                     <ul className="rightside__list-parent">
-                        <li className="rightside__list-item">About</li>
-                        <li className="rightside__list-item">Projects</li>
-                        <li className="rightside__list-item">Contact</li>
+                        <li className="rightside__list-item">
+                            <a href="#about">About</a>
+                        </li>
+                        <li className="rightside__list-item">
+                            <a href="#projects">Projects</a>
+                        </li>
+                        <li className="rightside__list-item">
+                            <a href="#contact">Contact</a>
+                        </li>
                     </ul>
                 </div>
             </nav>
