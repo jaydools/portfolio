@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 export default function Footer() {
     return (
-        <div className="footer">
+        <footer className="footer">
             <div className="footer-left">
                 <div className="footer-left__text">
                     <p className="footer-left__body">
@@ -60,6 +60,6 @@ export default function Footer() {
                     </div>
                 </div>
             </div>
-        </div>
+        </footer>
     );
 }

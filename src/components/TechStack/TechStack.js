@@ -15,7 +15,7 @@ import routerdom from "../../assets/icons/tech/17.png";
 
 function TechStack() {
     return (
-        <div className="tec-container">
+        <section className="tec-container">
             <h2 className="tec-container__header">MY SKILLS</h2>
             <h3 className="tec-container__subhead">Technologies</h3>
             <div className="tec-card">
@@ -32,7 +32,7 @@ function TechStack() {
                 <img src={knex} alt="knex icon" className="tec-card__icon" />
                 <img src={routerdom} alt="react router icon" className="tec-card__icon" />
             </div>
-        </div>
+        </section>
     );
 }
 

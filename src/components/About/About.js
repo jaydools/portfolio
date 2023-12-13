@@ -38,7 +38,7 @@ function About() {
     }, []);
 
     return (
-        <div className="about-container" id="about">
+        <section className="about-container" id="about">
             <div className="about-card">
                 <h2 className="about-card__header">Background</h2>
                 <h4 className="about-card__subhead">Park Ranger turned Software Engineer</h4>
@@ -98,7 +98,7 @@ function About() {
                     </div>
                 )}
             </div>
-            <div className="abilities" ref={abilitiesRef}>
+            <section className="abilities" ref={abilitiesRef}>
                 <div
                     data-card="frontend"
                     className={`abilities__card ${
@@ -124,8 +124,8 @@ function About() {
                     <p className="abilities__text">Ux Design</p>
                     <img src={ux} alt="frontend icon" className="abilities__icon" />
                 </div>
-            </div>
-        </div>
+            </section>
+        </section>
     );
 }
 

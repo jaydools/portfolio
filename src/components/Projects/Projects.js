@@ -8,7 +8,7 @@ import vearthybottom from "../../assets/vearthybottom.png";
 
 function Projects() {
     return (
-        <div className="projects-container" id="projects">
+        <section className="projects-container" id="projects">
             <h2 className="projects-container__header">Projects</h2>
             <div className="projects-card">
                 <div className="projects-card__builder">
@@ -77,7 +77,7 @@ function Projects() {
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
     );
 }
 
