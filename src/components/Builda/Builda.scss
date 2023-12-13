@@ -1,0 +1,40 @@
+@use "../../style/global" as *;
+@use "../../style/mixins" as *;
+@use "../../style/variables" as *;
+
+.dropdown {
+    box-shadow: $shadow;
+
+    &__arrow {
+        padding-left: 1rem;
+        height: 20px;
+        margin-top: 0.75rem;
+    }
+
+    &__body {
+        @include mobileP2;
+        margin: 1rem;
+    }
+
+    &__img {
+        width: 100%;
+    }
+
+    &__wrapper {
+        display: flex;
+    }
+
+    &__img-half {
+        width: 40%;
+        margin: 1rem;
+
+        &:hover {
+            animation: circle 2s linear;
+        }
+    }
+}
+
+.link {
+    color: $primary;
+    font-weight: bold;
+}

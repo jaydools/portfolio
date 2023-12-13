@@ -4,7 +4,7 @@ import Footer from "./components/Footer/Footer";
 import Hero from "./components/Hero/Hero";
 import Nav from "./components/Nav/Nav";
 import Burger from "./components/NavHamburg/Burger";
-import Projects from "./components/Projects/Projects";
+import ProjectsDropdown from "./components/ProjectsDropdown/ProjectsDropdown";
 import TechStack from "./components/TechStack/TechStack";
 
 function App() {
@@ -12,10 +12,12 @@ function App() {
         <div className="App">
             <Burger />
             <Nav />
-            <Hero />
-            <About />
-            <TechStack />
-            <Projects />
+            <main>
+                <Hero />
+                <About />
+                <TechStack />
+                <ProjectsDropdown />
+            </main>
             <Footer />
         </div>
     );

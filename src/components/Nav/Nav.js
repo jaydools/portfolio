@@ -4,7 +4,7 @@ import logo from "../../assets/icons/logo.png";
 
 function Header() {
     return (
-        <span>
+        <header>
             <nav className="navbar">
                 <div className="leftside">
                     <img src={logo} alt="Dooley logo" className="leftside__logo" />
@@ -23,7 +23,7 @@ function Header() {
                     </ul>
                 </div>
             </nav>
-        </span>
+        </header>
     );
 }
 

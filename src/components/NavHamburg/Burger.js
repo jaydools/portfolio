@@ -10,7 +10,7 @@ function Burger() {
     };
 
     return (
-        <div className="burger-container">
+        <header className="burger-container">
             <div className="burger-left">
                 <img src={logo} alt="Dooley logo" className="burger-left__logo" />
             </div>
@@ -33,7 +33,7 @@ function Burger() {
                     </div>
                 </div>
             )}
-        </div>
+        </header>
     );
 }
 

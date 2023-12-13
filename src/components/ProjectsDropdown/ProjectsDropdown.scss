@@ -1,0 +1,17 @@
+@use "../../style/global" as *;
+@use "../../style/mixins" as *;
+@use "../../style/variables" as *;
+
+.dropdown-container {
+    margin-bottom: 1rem;
+    &__header {
+        margin: 2rem;
+        @include mobileH1;
+    }
+
+    &__subheader {
+        @include mobileH3;
+        margin: 1rem 0 0.5rem 2rem;
+        padding-top: 0.5rem;
+    }
+}

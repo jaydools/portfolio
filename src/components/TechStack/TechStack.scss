@@ -4,7 +4,6 @@
 
 .tec-container {
     margin: 2rem 0;
-
     background: linear-gradient(90deg, rgba(28, 41, 44, 1) 0%, rgba(56, 71, 74, 1) 100%);
 
     &__header {
@@ -29,7 +28,7 @@
     justify-content: center;
 
     &__icon {
-        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        box-shadow: $shadow;
         width: 30%;
         max-width: 170px;
         padding: 1rem;
@@ -37,7 +36,7 @@
         border-radius: $cardRadius;
 
         &:hover {
-            box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.2), 0 6px 20px 0 rgba(226, 226, 226, 0.19);
+            box-shadow: $shadow;
         }
     }
 }

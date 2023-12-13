@@ -3,7 +3,7 @@ import "./Hero.scss";
 
 function Hero() {
     return (
-        <div className="hero-container">
+        <section className="hero-container">
             <div className="hero-text">
                 <h1 className="hero-text__header">Hello, my name is Jordan Dooley 👋</h1>
                 <h2 className="hero-text__subhead">And I'm a fullstack software engineer</h2>
@@ -15,7 +15,7 @@ function Hero() {
                     impress them.
                 </p>
             </div>
-        </div>
+        </section>
     );
 }
 
