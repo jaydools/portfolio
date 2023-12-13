@@ -20,19 +20,26 @@ function VearthyReal() {
             {isOpen && (
                 <div className="dropdown__content">
                     <p className="dropdown__body">
-                        This is Vearthy.com, an Ecommerce store that I founded and currently run.
+                        This is <span> </span>
+                        <a href="https://vearthy.com" target="blank" className="link">
+                            Vearthy.com
+                        </a>
+                        , an Ecommerce store that I founded in 2021 and currently oversee all
+                        operations for.
                     </p>
                     <div className="dropdown__wrapper">
-                        <img
-                            src={vearthytop}
-                            alt="Vearthy mock preview top"
-                            className="dropdown__img-half"
-                        />
-                        <img
-                            src={vearthybottom}
-                            alt="Vearthy mock preview top"
-                            className="dropdown__img-half"
-                        />
+                        <a href="https://vearthy.com/" target="blank">
+                            <img
+                                src={vearthytop}
+                                alt="Vearthy mock preview top"
+                                className="dropdown__img-half"
+                            />
+                            <img
+                                src={vearthybottom}
+                                alt="Vearthy mock preview top"
+                                className="dropdown__img-half"
+                            />
+                        </a>
                     </div>
                 </div>
             )}

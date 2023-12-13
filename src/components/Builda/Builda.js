@@ -19,12 +19,23 @@ function Builda() {
             {isOpen && (
                 <div className="dropdown__content">
                     <p className="dropdown__body">
-                        This is the capstone project I created for my software engineering course
-                        through Brainstation. It is a fullstack application, that is designed for
-                        small business owners (specifically in the flower business) to increase
-                        engagement and drive sales
+                        This is the capstone project I created for my software engineering diploma
+                        program through<span> </span>
+                        <a href="https://brainstation.io/" target="blank" className="link">
+                            Brainstation.
+                        </a>
+                        <span> </span>
+                        It is a fullstack application, that is designed for small business owners
+                        (specifically in the flower business) to increase engagement and drive
+                        sales. This application was created with React, uses an Express server on
+                        the backend and a SQL database.
                     </p>
-                    <img src={builder} alt="Build a Bouq preview" className="dropdown__img" />
+                    <a
+                        href="https://build-a-bouq-client-873c8fc72a2f.herokuapp.com/"
+                        target="blank"
+                    >
+                        <img src={builder} alt="Build a Bouq preview" className="dropdown__img" />
+                    </a>
                 </div>
             )}
         </div>

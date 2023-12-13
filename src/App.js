@@ -4,7 +4,6 @@ import Footer from "./components/Footer/Footer";
 import Hero from "./components/Hero/Hero";
 import Nav from "./components/Nav/Nav";
 import Burger from "./components/NavHamburg/Burger";
-import Projects from "./components/Projects/Projects";
 import ProjectsDropdown from "./components/ProjectsDropdown/ProjectsDropdown";
 import TechStack from "./components/TechStack/TechStack";
 
