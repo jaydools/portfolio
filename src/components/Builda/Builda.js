@@ -19,13 +19,13 @@ function Builda() {
             {isOpen && (
                 <div className="dropdown__content">
                     <p className="dropdown__body">
-                        This is the capstone project I created for my software engineering diploma
-                        program through<span> </span>
+                        I created This capstone project for my software engineering diploma program
+                        through<span> </span>
                         <a href="https://brainstation.io/" target="blank" className="link">
                             Brainstation.
                         </a>
                         <span> </span>
-                        It is a fullstack application, that is designed for small business owners
+                        It is a full-stack application, that is designed for small business owners
                         (specifically in the flower business) to increase engagement and drive
                         sales. This application was created with React, uses an Express server on
                         the backend and a SQL database.

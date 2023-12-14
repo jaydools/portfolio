@@ -33,14 +33,14 @@ function Contact() {
                 <p className="contact-card__body">
                     ✅ Proven Track Record: The projects showcased here are a testament to my
                     ability to deliver on a time limit. Whether it's building a full-stack solution,
-                    crafting a visually stunning front-end, or scaling an e-commerce platform, I've
-                    can do it with flair and efficiency.
+                    crafting a visually stunning front-end, or scaling an e-commerce platform, I can
+                    do it with flair and efficiency.
                 </p>
                 <p className="contact-card__body">
                     ✅ Dynamic Adaptability: My journey as a visual learner and pragmatic software
                     engineer has honed my ability to quickly grasp and apply new concepts. This
                     agility in learning ensures that your project will not only meet expectations,
-                    but they will also uncover new avenues for excellence and creativity.
+                    but will also uncover new avenues for excellence and creativity.
                 </p>
                 <div className="contact-container__button-wrapper">
                     <button onClick={mailTo} className="contact-container__button1">
