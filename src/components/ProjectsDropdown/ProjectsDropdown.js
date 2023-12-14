@@ -6,7 +6,7 @@ import VearthyMock from "../VearthyMock/VearthyMock";
 
 function ProjectsDropdown() {
     return (
-        <section className="dropdown-container">
+        <section className="dropdown-container" id="projects">
             <h2 className="dropdown-container__header">Projects</h2>
             <article className="dropdown-one">
                 <h3 className="dropdown-container__subheader">Build A Bouq</h3>
