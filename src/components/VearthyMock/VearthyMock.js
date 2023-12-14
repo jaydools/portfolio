@@ -20,21 +20,25 @@ function VearthyMock() {
             {isOpen && (
                 <div className="dropdown__content">
                     <p className="dropdown__body">
-                        This is a mock website that I use to come up with new ideas for layouts,
-                        styles and possabilities for what I could make my current Shopify store
-                        into.
+                        This is a brainstorm website that I use to come up with new ideas for
+                        layouts, styles and new features for Vearthy.
                     </p>
                     <div className="dropdown__wrapper">
-                        <img
-                            src={mocktop}
-                            alt="Vearthy mock preview top"
-                            className="dropdown__img-half"
-                        />
-                        <img
-                            src={mockbottom}
-                            alt="Vearthy mock preview top"
-                            className="dropdown__img-half"
-                        />
+                        <a
+                            href="https://vearthy-brainpad-3f4347efaeb2.herokuapp.com/"
+                            target="blank"
+                        >
+                            <img
+                                src={mocktop}
+                                alt="Vearthy mock preview top"
+                                className="dropdown__img-half"
+                            />
+                            <img
+                                src={mockbottom}
+                                alt="Vearthy mock preview top"
+                                className="dropdown__img-half"
+                            />
+                        </a>
                     </div>
                 </div>
             )}
