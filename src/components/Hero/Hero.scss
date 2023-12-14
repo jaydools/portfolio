@@ -22,19 +22,23 @@ video {
     &__header {
         @include mobileH1;
         color: $white;
-        margin: 1rem;
+        margin: 1rem 2rem;
     }
 
     &__subhead {
         @include mobileH2;
         color: $white;
-        margin: 1rem;
+        margin: 1rem 2rem;
     }
 
     &__body {
         @include mobileP1;
         color: $white;
-        margin-left: 1rem;
+        margin-left: 2rem;
         padding-top: 0.5rem;
+
+        @include tablet {
+            width: 70%;
+        }
     }
 }

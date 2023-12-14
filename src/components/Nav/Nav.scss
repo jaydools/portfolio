@@ -37,10 +37,6 @@
         @include tablet {
             height: 75px;
         }
-
-        @include desktop {
-            height: 100px;
-        }
     }
 }
 .rightside {
