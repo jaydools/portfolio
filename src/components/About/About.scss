@@ -19,14 +19,7 @@
 }
 
 .about-card {
-    border-radius: $cardRadius;
-    background: linear-gradient(
-        90deg,
-        rgba(246, 246, 246, 1) 0%,
-        rgba(255, 255, 255, 1) 35%,
-        rgba(223, 223, 223, 1) 100%
-    );
-    box-shadow: $shadow;
+    @include card;
     margin: 8rem 2.5rem 2rem 2.5rem;
     padding: 2rem;
 
