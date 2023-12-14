@@ -11,7 +11,7 @@ export default function Footer() {
                         engineer. This website, as well as projects featured on this website have
                         been designed by myself and are the types of projects I am extremely
                         comfortable building. Please reach out to me anytime if you would like to
-                        talk about how I could elevate your business and bring you tangleable value.
+                        talk about how I could elevate your business and bring you tangible value.
                     </p>
                 </div>
 

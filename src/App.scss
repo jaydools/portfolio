@@ -11,3 +11,19 @@
     position: absolute;
     width: 100%;
 }
+
+.top-button {
+    height: 30px;
+    position: fixed;
+    top: 93%;
+    right: 2%;
+    opacity: 50%;
+
+    @include tablet {
+        top: 89%;
+    }
+
+    &:hover {
+        opacity: 100%;
+    }
+}
