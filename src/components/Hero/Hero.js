@@ -9,10 +9,9 @@ function Hero() {
                 <h2 className="hero-text__subhead">And I'm a fullstack software engineer</h2>
                 <p className="hero-text__body">You've landed on my portolio page, welcome! </p>
                 <p className="hero-text__body">
-                    A website is one of the first points of contact for your customers, and if not
+                    A website is one of the first points of contact for your customers. If it's not
                     the first point of contact, it's where your customers will return to after they
-                    find you. Convince them you're worth an investment with something that will
-                    impress them.
+                    find you. Convince them you're worth an investment.
                 </p>
             </div>
         </section>

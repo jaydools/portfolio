@@ -27,6 +27,12 @@ function VearthyReal() {
                         , an Ecommerce store that I founded in 2021 and currently oversee all
                         operations for.
                     </p>
+                    <p>
+                        Vearthy is a fully functional store that has automated newsletters, order
+                        messages, upsale features, analytics, customer login portals/accounts with
+                        rewards; and everything else thats essential for running an Ecommerce. We
+                        even have a great warranty.
+                    </p>
                     <div className="dropdown__wrapper">
                         <a href="https://vearthy.com/" target="blank">
                             <img
