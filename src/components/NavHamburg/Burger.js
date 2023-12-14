@@ -8,6 +8,12 @@ function Burger() {
     const toggleMenu = () => {
         setIsOpen(!isOpen);
     };
+    const scrollToSection = (sectionId, event) => {
+        event.preventDefault();
+
+        const section = document.getElementById(sectionId);
+        section.scrollIntoView({ behavior: "smooth" });
+    };
 
     return (
         <header className="burger-container">
@@ -23,13 +29,19 @@ function Burger() {
             {isOpen && (
                 <div className="burger-nav">
                     <div className="burger-nav__link">
-                        <a href="#about">About</a>
+                        <a href="#about" onClick={(e) => scrollToSection("about", e)}>
+                            About
+                        </a>
                     </div>
                     <div className="burger-nav__link">
-                        <a href="#projects">Projects</a>
+                        <a href="#projects" onClick={(e) => scrollToSection("projects", e)}>
+                            Projects
+                        </a>
                     </div>
                     <div className="burger-nav__link">
-                        <a href="#contact">Contact</a>
+                        <a href="#contact" onClick={(e) => scrollToSection("contact", e)}>
+                            Contact
+                        </a>
                     </div>
                 </div>
             )}

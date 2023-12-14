@@ -20,18 +20,14 @@ function VearthyReal() {
             {isOpen && (
                 <div className="dropdown__content">
                     <p className="dropdown__body">
-                        This is <span> </span>
                         <a href="https://vearthy.com" target="blank" className="link">
                             Vearthy.com
                         </a>
-                        , an Ecommerce store that I founded in 2021 and currently oversee all
-                        operations for.
-                    </p>
-                    <p>
-                        Vearthy is a fully functional store that has automated newsletters, order
-                        messages, upsale features, analytics, customer login portals/accounts with
-                        rewards; and everything else thats essential for running an Ecommerce. We
-                        even have a great warranty.
+                        <span> </span>
+                        is a fully functional store that has automated newsletters, order messages,
+                        upsell features, analytics and customer accounts with rewards. It is an
+                        Ecommerece that I created and oversee, which has everything essential for
+                        running an online store. We even have a great warranty.
                     </p>
                     <div className="dropdown__wrapper">
                         <a href="https://vearthy.com/" target="blank">
