@@ -1,5 +1,7 @@
 import React from "react";
 import "./Hero.scss";
+import linkedin from "../../assets/icons/linkedin.svg";
+import github from "../../assets/icons/github.svg";
 
 function Hero() {
     return (
@@ -13,6 +15,12 @@ function Hero() {
                     the first point of contact, it's where your customers will return to after they
                     find you. Convince them you're worth an investment.
                 </p>
+                <a href="https://www.linkedin.com/in/jordan-dooley-/" target="blank">
+                    <img src={linkedin} alt="linkedin logo" className="hero-container__icon1" />
+                </a>
+                <a href="https://github.com/jaydools" target="blank">
+                    <img src={github} alt="linkedin logo" className="hero-container__icon2" />
+                </a>
             </div>
         </section>
     );

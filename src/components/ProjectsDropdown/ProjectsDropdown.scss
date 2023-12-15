@@ -3,7 +3,7 @@
 @use "../../style/variables" as *;
 
 .dropdown-container {
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
     &__header {
         margin: 2rem;
         @include mobileH1;

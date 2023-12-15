@@ -8,6 +8,8 @@ import Burger from "./components/NavHamburg/Burger";
 import ProjectsDropdown from "./components/ProjectsDropdown/ProjectsDropdown";
 import TechStack from "./components/TechStack/TechStack";
 import upArrow from "./assets/icons/up-arrow.svg";
+import Abilities from "./components/Abilities/Abilities";
+import Timeline from "./components/Timeline/Timeline";
 
 function App() {
     const scrollToSection = (sectionId, event) => {
@@ -23,7 +25,9 @@ function App() {
             <main>
                 <Hero />
                 <About />
+                <Timeline />
                 <TechStack />
+                <Abilities />
                 <ProjectsDropdown />
                 <Contact />
             </main>
