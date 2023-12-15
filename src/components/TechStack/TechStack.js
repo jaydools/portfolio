@@ -12,6 +12,7 @@ import npm from "../../assets/icons/tech/14.png";
 import mysql from "../../assets/icons/tech/15.png";
 import knex from "../../assets/icons/tech/16.png";
 import routerdom from "../../assets/icons/tech/17.png";
+import pointingDown from "../../assets/pointingDown.png";
 
 function TechStack() {
     return (

@@ -9,7 +9,7 @@ import ProjectsDropdown from "./components/ProjectsDropdown/ProjectsDropdown";
 import TechStack from "./components/TechStack/TechStack";
 import upArrow from "./assets/icons/up-arrow.svg";
 import Abilities from "./components/Abilities/Abilities";
-import Timeline from "./components/Timeline/Timeline";
+import pointingDown from "./assets/pointingDown.png";
 
 function App() {
     const scrollToSection = (sectionId, event) => {
@@ -25,7 +25,13 @@ function App() {
             <main>
                 <Hero />
                 <About />
-                <Timeline />
+                <div className="tec-container__wrapper">
+                    {/* <img
+                        src={pointingDown}
+                        alt="image of man pointing down screen"
+                        className="tec-container__image"
+                    /> */}
+                </div>
                 <TechStack />
                 <Abilities />
                 <ProjectsDropdown />
