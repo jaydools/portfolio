@@ -1,0 +1,56 @@
+@use "../../style/global" as *;
+@use "../../style/mixins" as *;
+@use "../../style/variables" as *;
+
+.abilities {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    @include tablet {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    &__card {
+        border-radius: $cardRadius;
+        box-shadow: $shadow;
+        background: linear-gradient(90deg, rgba(28, 41, 44, 1) 0%, rgba(56, 71, 74, 1) 100%);
+        margin: 1rem;
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        opacity: 0;
+        transform: translateX(-100px);
+        transition: transform 0.5s ease-out, opacity 0.5s ease-out;
+
+        &--visible {
+            opacity: 1;
+            transform: translateX(0);
+        }
+
+        @include tablet {
+            width: 25%;
+            align-items: center;
+        }
+    }
+
+    &__text {
+        @include mobileH3;
+        padding-top: 1rem;
+        text-align: center;
+        color: $white;
+    }
+
+    &__icon {
+        height: 200px;
+        width: 200px;
+        padding: 1rem;
+        filter: invert(100%);
+
+        @include tablet {
+            width: 90%;
+            height: 90%;
+        }
+    }
+}
