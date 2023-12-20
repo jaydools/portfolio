@@ -9,8 +9,8 @@ function VearthyReal() {
     const [isOpen, setIsOpen] = useState(false);
 
     return (
-        <div className="dropdown">
-            <button onClick={() => setIsOpen(!isOpen)} className="dropdown__button">
+        <div onClick={() => setIsOpen(!isOpen)} className="dropdown">
+            <button className="dropdown__button">
                 {isOpen ? (
                     <img src={upArrow} alt="Dropdown Arrow" className="dropdown__arrow" />
                 ) : (
@@ -26,8 +26,15 @@ function VearthyReal() {
                         <span> </span>
                         is a fully functional store that has automated newsletters, order messages,
                         upsell features, analytics and customer accounts with rewards. It is an
-                        Ecommerece that I created and oversee, which has everything essential for
-                        running an online store. We even have a great warranty.
+                        Ecommerece that I created and oversee all operations for, which has
+                        everything essential for running an online store. We even have a great
+                        warranty.
+                    </p>
+                    <p className="dropdown__body">
+                        Tech used: Shopify, Google Analytics, Meta Pixel, Klaviyo, Fera, Smile.io,
+                        Lucky Orange, Adobe Photoshop, Canva.
+                        <br />
+                        (Click on the image to open the store)
                     </p>
                     <div className="dropdown__wrapper">
                         <a href="https://vearthy.com/" target="blank">

@@ -8,8 +8,8 @@ function Builda() {
     const [isOpen, setIsOpen] = useState(false);
 
     return (
-        <div className="dropdown">
-            <button onClick={() => setIsOpen(!isOpen)} className="dropdown__button">
+        <div onClick={() => setIsOpen(!isOpen)} className="dropdown">
+            <button className="dropdown__button">
                 {isOpen ? (
                     <img src={upArrow} alt="Dropdown Arrow" className="dropdown__arrow" />
                 ) : (
@@ -27,8 +27,13 @@ function Builda() {
                         <span> </span>
                         It is a full-stack application, that is designed for small business owners
                         (specifically in the flower business) to increase engagement and drive
-                        sales. This application was created with React, uses an Express server on
-                        the backend and a SQL database.
+                        sales.
+                    </p>
+                    <p className="dropdown__body">
+                        Tech used: HTML, CSS, Javascript, React, Npm, Sass, Axios, React Router,
+                        Node.js, Express.js, MySQL, Knex, .ENV.
+                        <br />
+                        (Click on the image to open the application)
                     </p>
                     <a
                         href="https://build-a-bouq-client-873c8fc72a2f.herokuapp.com/"

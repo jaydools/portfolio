@@ -9,8 +9,8 @@ function VearthyMock() {
     const [isOpen, setIsOpen] = useState(false);
 
     return (
-        <div className="dropdown">
-            <button onClick={() => setIsOpen(!isOpen)} className="dropdown__button">
+        <div onClick={() => setIsOpen(!isOpen)} className="dropdown">
+            <button className="dropdown__button">
                 {isOpen ? (
                     <img src={upArrow} alt="Dropdown Arrow" className="dropdown__arrow" />
                 ) : (
@@ -21,7 +21,12 @@ function VearthyMock() {
                 <div className="dropdown__content">
                     <p className="dropdown__body">
                         This is a brainstorm website that I use to come up with new ideas for
-                        layouts, styles and new features for Vearthy.
+                        layouts, styles and new features for the main Vearthy website.
+                    </p>
+                    <p className="dropdown__body">
+                        Tech used: HTML, CSS, Javascript, React, Npm, Sass, React Router.
+                        <br />
+                        (Click on the image to open the application)
                     </p>
                     <div className="dropdown__wrapper">
                         <a
