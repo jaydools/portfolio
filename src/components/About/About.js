@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import "./About.scss";
-import avatar from "../../assets/avatar.png";
 
 function About() {
     const [isExpanded, setIsExpanded] = useState(false);
@@ -55,12 +54,6 @@ function About() {
                         <button className="card-button" onClick={toggleExpand}>
                             Show Less
                         </button>
-
-                        {/* <img
-                            src={avatar}
-                            alt="avatar of Jordan Dooley"
-                            className="about-card__avatar"
-                        /> */}
                     </div>
                 ) : (
                     <div>
