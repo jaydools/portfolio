@@ -19,15 +19,18 @@ function Builda() {
             {isOpen && (
                 <div className="dropdown__content">
                     <p className="dropdown__body">
-                        I created This capstone project for my software engineering diploma program
-                        through<span> </span>
+                        Build A Bouq is an interactive and dynamic bouquet building application,
+                        that aims to drive sales for small business owners by increasing engagement
+                        with their customers. It checks the stores inventory and will display images
+                        of flowers that are in stock. Customers can then add their selection to
+                        their cart and checkout easily. This project was created as my capstone
+                        project for my Software Engineering program at<span> </span>
                         <a href="https://brainstation.io/" target="blank" className="link">
                             Brainstation.
                         </a>
                         <span> </span>
-                        It is a full-stack application, that is designed for small business owners
-                        (specifically in the flower business) to increase engagement and drive
-                        sales.
+                        This is a deployed full stack app that uses a React frontend, an Express
+                        backend and a database built with MySQL.
                     </p>
                     <p className="dropdown__body">
                         Tech used: HTML, CSS, Javascript, React, Npm, Sass, Axios, React Router,

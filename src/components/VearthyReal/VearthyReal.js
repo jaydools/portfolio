@@ -24,11 +24,11 @@ function VearthyReal() {
                             Vearthy.com
                         </a>
                         <span> </span>
-                        is a fully functional store that has automated newsletters, order messages,
-                        upsell features, analytics and customer accounts with rewards. It is an
-                        Ecommerece that I created and oversee all operations for, which has
-                        everything essential for running an online store. We even have a great
-                        warranty.
+                        is a fully functional Ecommerece store, that runs automated newsletters and
+                        order messages, has upsell features, analytics and customer accounts with
+                        rewards. Created in 2021, Vearthy is a passion project of mine and has given
+                        me a lot of small business insight. Vearthy is all about providing High
+                        Quality, Low Impact everyday essentials, you should check it out!
                     </p>
                     <p className="dropdown__body">
                         Tech used: Shopify, Google Analytics, Meta Pixel, Klaviyo, Fera, Smile.io,

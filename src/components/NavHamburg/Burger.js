@@ -15,6 +15,20 @@ function Burger() {
         section.scrollIntoView({ behavior: "smooth" });
     };
 
+    const handleBothAbout = (event) => {
+        toggleMenu();
+        scrollToSection("about", event);
+    };
+
+    const handleBothProjects = (event) => {
+        toggleMenu();
+        scrollToSection("projects", event);
+    };
+    const handleBothContact = (event) => {
+        toggleMenu();
+        scrollToSection("contact", event);
+    };
+
     return (
         <header className="burger-container">
             <div className="burger-left">
@@ -29,17 +43,17 @@ function Burger() {
             {isOpen && (
                 <div className="burger-nav">
                     <div className="burger-nav__link">
-                        <a href="#about" onClick={(e) => scrollToSection("about", e)}>
+                        <a href="#about" onClick={handleBothAbout}>
                             About
                         </a>
                     </div>
                     <div className="burger-nav__link">
-                        <a href="#projects" onClick={(e) => scrollToSection("projects", e)}>
+                        <a href="#projects" onClick={handleBothProjects}>
                             Projects
                         </a>
                     </div>
                     <div className="burger-nav__link">
-                        <a href="#contact" onClick={(e) => scrollToSection("contact", e)}>
+                        <a href="#contact" onClick={handleBothContact}>
                             Contact
                         </a>
                     </div>

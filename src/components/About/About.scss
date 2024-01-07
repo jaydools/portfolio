@@ -13,17 +13,12 @@
     }
 }
 
-.about-container {
-    display: flex;
-    flex-direction: column;
-}
-
 .about-card {
     @include card;
     margin: 5rem 2.5rem 2rem 2.5rem;
-    padding: 2rem;
     display: flex;
     flex-direction: column;
+    padding: 2rem 2rem 0 2rem;
 
     &__header {
         @include mobileH2;
@@ -35,18 +30,13 @@
         padding-bottom: 0.5rem;
     }
 
-    &__avatar {
-        height: 250px;
-        position: relative;
-        left: 30%;
+    &__stack {
+        display: flex;
+        flex-direction: column;
+    }
 
-        @include tablet {
-            left: 50%;
-        }
-
-        @include desktop {
-            left: 70%;
-        }
+    &__body {
+        margin: 1 rem;
     }
 }
 
@@ -61,6 +51,11 @@
 }
 
 .card-button {
-    padding-top: 0.5rem;
+    padding: 0.5rem 0.5rem;
     font-weight: bold;
+    text-align: end;
+}
+
+.card-img {
+    width: 50%;
 }

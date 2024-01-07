@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./About.scss";
+import me from "../../assets/me.png";
 
 function About() {
     const [isExpanded, setIsExpanded] = useState(false);
@@ -51,9 +52,12 @@ function About() {
                             interest in coding and aim for continual growth should inspire you that
                             he will genuinely want to, and will, do a stellar job.
                         </p>
-                        <button className="card-button" onClick={toggleExpand}>
-                            Show Less
-                        </button>
+                        <div className="about-card__stack">
+                            <button className="card-button" onClick={toggleExpand}>
+                                Show Less
+                            </button>
+                            <img src={me} alt="Jordan Dooley" className="card-img" />
+                        </div>
                     </div>
                 ) : (
                     <div>

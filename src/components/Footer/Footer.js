@@ -7,11 +7,10 @@ export default function Footer() {
             <div className="footer-left">
                 <div className="footer-left__text">
                     <p className="footer-left__body">
-                        This is an ever evolving website to showcase my abilities as a software
-                        engineer. This website, as well as projects featured on this website have
-                        been designed by myself and are the types of projects I am extremely
-                        comfortable building. Please reach out to me anytime if you would like to
-                        talk about how I could elevate your business and bring you tangible value.
+                        This website, as well as projects featured on this website have been
+                        designed by myself and are the types of projects I am extremely comfortable
+                        building. Please reach out to me anytime if you would like to talk about how
+                        I could elevate your business and bring you tangible value.
                     </p>
                 </div>
 
