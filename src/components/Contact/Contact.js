@@ -7,7 +7,7 @@ function Contact() {
     };
 
     const openPDF = () => {
-        window.open("/Jordan_Dooley_resume.pdf", "_blank");
+        window.open("/Jordan_Dooley_Resume.pdf", "_blank");
     };
 
     return (
