@@ -37,7 +37,7 @@ function PintPicker() {
                         (Click on the image to open the application)
                     </p>
                     <div className="dropdown__wrapper">
-                        <a href="https://pint-picker-f95250ec87ce.herokuapp.com/" target="blank">
+                        <a href="https://pintpicker.netlify.app/" target="blank">
                             <img
                                 src={pint1}
                                 alt="Vearthy mock preview top"

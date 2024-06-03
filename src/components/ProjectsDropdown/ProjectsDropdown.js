@@ -21,10 +21,6 @@ function ProjectsDropdown() {
                 <h3 className="dropdown-container__subheader">Vearthy.com</h3>
                 <VearthyReal />
             </article>
-            <article className="dropdown-three">
-                <h3 className="dropdown-container__subheader">Vearthy Mock</h3>
-                <VearthyMock />
-            </article>
         </section>
     );
 }

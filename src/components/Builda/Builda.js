@@ -39,7 +39,7 @@ function Builda() {
                         (Click on the image to open the application)
                     </p>
                     <a
-                        href="https://build-a-bouq-client-873c8fc72a2f.herokuapp.com/"
+                        href="https://665d1ff50761dde33bb9b19c--gorgeous-tulumba-42d5c3.netlify.app/"
                         target="blank"
                     >
                         <img src={builder} alt="Build a Bouq preview" className="dropdown__img" />
