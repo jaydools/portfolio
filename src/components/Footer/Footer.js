@@ -45,17 +45,6 @@ export default function Footer() {
                                 Contact
                             </a>
                         </div>
-                        <div className="footer__right-linksright">
-                            <a href="" className="footer-right__content-right">
-                                Privacy
-                            </a>
-                            <a href="" className="footer-right__content-right">
-                                Cookies
-                            </a>
-                            <a href="" className="footer-right__content-right">
-                                Terms
-                            </a>
-                        </div>
                     </div>
                 </div>
             </div>
