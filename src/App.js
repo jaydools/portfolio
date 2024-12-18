@@ -9,6 +9,7 @@ import ProjectsDropdown from "./components/ProjectsDropdown/ProjectsDropdown";
 import TechStack from "./components/TechStack/TechStack";
 import upArrow from "./assets/icons/up-arrow.svg";
 import Abilities from "./components/Abilities/Abilities";
+import Projects from "./components/Projects/Projects";
 
 function App() {
     const scrollToSection = (sectionId, event) => {
@@ -26,7 +27,8 @@ function App() {
                 <About />
                 <TechStack />
                 <Abilities />
-                <ProjectsDropdown />
+                <Projects />
+                {/* <ProjectsDropdown /> */}
                 <Contact />
             </main>
             <img
