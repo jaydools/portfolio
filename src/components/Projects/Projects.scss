@@ -1,3 +1,61 @@
 @use "../../style/global" as *;
 @use "../../style/mixins" as *;
 @use "../../style/variables" as *;
+
+.project-title {
+    @include mobileH1;
+    margin: 2rem 2rem 0 2rem;
+
+    &__body {
+        margin-left: 2rem;
+        @include mobileP2;
+    }
+}
+.projects-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    @include card;
+    margin: 0.75rem 0;
+
+    &__image {
+        width: 100%;
+        object-fit: contain;
+        object-position: top;
+        padding: 1rem;
+        max-height: 30vh;
+    }
+
+    &__title {
+        margin-left: 1rem;
+        @include mobileH3;
+    }
+
+    &__body {
+        padding: 0.75rem;
+        @include mobileP2;
+    }
+
+    &__link {
+        &:hover {
+            cursor: pointer;
+        }
+    }
+}
+
+.tech-icon-container {
+    display: flex;
+    margin: 0.5rem 0.25rem;
+    flex-wrap: wrap;
+
+    &__icon {
+        margin: 0.25rem 0.5rem;
+        border: 1px solid $secondary;
+        border-radius: 10px;
+        padding: 0 0.25rem;
+
+        &--flair {
+            color: $secondary;
+        }
+    }
+}
